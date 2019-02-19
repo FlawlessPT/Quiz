@@ -116,7 +116,7 @@
             this.Eletricidade_Button.Name = "Eletricidade_Button";
             this.Eletricidade_Button.Size = new System.Drawing.Size(225, 80);
             this.Eletricidade_Button.TabIndex = 10;
-            this.Eletricidade_Button.Text = "ELETRICIDADE";
+            this.Eletricidade_Button.Text = "INSTALAÇÕES ELÉTRICAS";
             this.Eletricidade_Button.UseVisualStyleBackColor = false;
             // 
             // Voltar_Button
@@ -188,14 +188,14 @@
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(225, 80);
             this.button4.TabIndex = 9;
-            this.button4.Text = "ANALISES";
+            this.button4.Text = "ANÁLISES LABORATORIAIS";
             this.button4.UseVisualStyleBackColor = false;
             // 
             // Tema
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
             this.AutoSize = true;
-            this.BackColor = System.Drawing.Color.Purple;
+            this.BackColor = System.Drawing.Color.Indigo;
             this.ClientSize = new System.Drawing.Size(550, 635);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.Voltar_Button);

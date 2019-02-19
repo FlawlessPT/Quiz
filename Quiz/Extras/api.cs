@@ -4,11 +4,28 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace Quiz
 {
     class api
     {
+        public static bool VerificarNickName(TextBox textBox)
+        {
+            bool estado = false;
+
+            if (textBox.TextLength > 0)
+            {
+                estado = true;
+            }
+            else
+            {
+                estado = false;
+            }
+
+            return estado;
+        }
+
         public enum Curso
         {
             INFORMATICA,

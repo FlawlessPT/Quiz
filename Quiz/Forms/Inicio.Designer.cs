@@ -42,7 +42,7 @@
             // 
             this.Leave_Button.BackColor = System.Drawing.Color.White;
             this.Leave_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Leave_Button.Font = new System.Drawing.Font("Rocks__G", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Leave_Button.Font = new System.Drawing.Font("Impact", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Leave_Button.Location = new System.Drawing.Point(310, 393);
             this.Leave_Button.Name = "Leave_Button";
             this.Leave_Button.Size = new System.Drawing.Size(187, 56);
@@ -53,7 +53,7 @@
             // 
             // label1
             // 
-            this.label1.BackColor = System.Drawing.Color.Purple;
+            this.label1.BackColor = System.Drawing.Color.Indigo;
             this.label1.Font = new System.Drawing.Font("Rocks__G", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(92, 92);
@@ -66,11 +66,11 @@
             // Nickname_Tb
             // 
             this.Nickname_Tb.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Nickname_Tb.Font = new System.Drawing.Font("Rocks__G", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Nickname_Tb.Font = new System.Drawing.Font("Rocks__G", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Nickname_Tb.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.Nickname_Tb.Location = new System.Drawing.Point(149, 134);
             this.Nickname_Tb.Name = "Nickname_Tb";
-            this.Nickname_Tb.Size = new System.Drawing.Size(225, 28);
+            this.Nickname_Tb.Size = new System.Drawing.Size(225, 31);
             this.Nickname_Tb.TabIndex = 7;
             this.Nickname_Tb.TextChanged += new System.EventHandler(this.Nickname_Tb_TextChanged);
             // 
@@ -79,7 +79,7 @@
             this.Play_Button.BackColor = System.Drawing.Color.White;
             this.Play_Button.Enabled = false;
             this.Play_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Play_Button.Font = new System.Drawing.Font("Rocks__G", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Play_Button.Font = new System.Drawing.Font("Impact", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Play_Button.Location = new System.Drawing.Point(149, 220);
             this.Play_Button.Name = "Play_Button";
             this.Play_Button.Size = new System.Drawing.Size(225, 80);
@@ -92,7 +92,7 @@
             // 
             this.sobre_Button.BackColor = System.Drawing.Color.White;
             this.sobre_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.sobre_Button.Font = new System.Drawing.Font("Rocks__G", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sobre_Button.Font = new System.Drawing.Font("Impact", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.sobre_Button.Location = new System.Drawing.Point(22, 393);
             this.sobre_Button.Name = "sobre_Button";
             this.sobre_Button.Size = new System.Drawing.Size(187, 56);
@@ -103,11 +103,12 @@
             // 
             // warning_Pb
             // 
+            this.warning_Pb.BackColor = System.Drawing.Color.White;
             this.warning_Pb.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.warning_Pb.Image = ((System.Drawing.Image)(resources.GetObject("warning_Pb.Image")));
-            this.warning_Pb.Location = new System.Drawing.Point(380, 134);
+            this.warning_Pb.Location = new System.Drawing.Point(341, 137);
             this.warning_Pb.Name = "warning_Pb";
-            this.warning_Pb.Size = new System.Drawing.Size(31, 28);
+            this.warning_Pb.Size = new System.Drawing.Size(29, 24);
             this.warning_Pb.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.warning_Pb.TabIndex = 10;
             this.warning_Pb.TabStop = false;
@@ -117,7 +118,7 @@
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
             this.AutoSize = true;
-            this.BackColor = System.Drawing.Color.Purple;
+            this.BackColor = System.Drawing.Color.Indigo;
             this.ClientSize = new System.Drawing.Size(519, 461);
             this.Controls.Add(this.warning_Pb);
             this.Controls.Add(this.sobre_Button);

@@ -47,13 +47,20 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Extras\api.cs" />
-    <Compile Include="Inicio.cs">
+    <Compile Include="Extras\Variables.cs" />
+    <Compile Include="Forms\Inicio.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Inicio.Designer.cs">
+    <Compile Include="Forms\Inicio.Designer.cs">
       <DependentUpon>Inicio.cs</DependentUpon>
     </Compile>
     <Compile Include="Extras\Quiz.cs" />
+    <Compile Include="Forms\Perguntas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Perguntas.Designer.cs">
+      <DependentUpon>Perguntas.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
@@ -62,21 +69,33 @@
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <Compile Include="Settings.cs" />
-    <Compile Include="Tema.cs">
+    <Compile Include="Forms\Sobre.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Tema.Designer.cs">
+    <Compile Include="Forms\Sobre.Designer.cs">
+      <DependentUpon>Sobre.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Tema.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Tema.Designer.cs">
       <DependentUpon>Tema.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Inicio.resx">
+    <EmbeddedResource Include="Forms\Inicio.resx">
       <DependentUpon>Inicio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Perguntas.resx">
+      <DependentUpon>Perguntas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="Tema.resx">
+    <EmbeddedResource Include="Forms\Sobre.resx">
+      <DependentUpon>Sobre.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Tema.resx">
       <DependentUpon>Tema.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
@@ -95,6 +114,7 @@
   <ItemGroup>
     <Content Include="Resources\warningicon.png" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

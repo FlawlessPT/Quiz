@@ -10,24 +10,23 @@ using System.Windows.Forms;
 
 namespace Quiz
 {
-    public partial class Tema : Form
+    public partial class Sobre : Form
     {
-        public Tema()
+        public Sobre()
         {
             InitializeComponent();
         }
 
-        private void Voltar_Button_Click(object sender, EventArgs e)
+        private void showInicio()
         {
             this.Hide();
             Inicio voltar = new Inicio();
             voltar.Show();
         }
 
-        private void Tema_Load(object sender, EventArgs e)
+        private void Voltar_Button_Click(object sender, EventArgs e)
         {
-            Quiz quiz = new Quiz();
-            api.sendMessage(quiz.GetNickName());
+            showInicio();   
         }
     }
 }
