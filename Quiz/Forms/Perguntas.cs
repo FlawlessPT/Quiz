@@ -20,9 +20,13 @@ namespace Quiz
 
         private void Perguntas_Load(object sender, EventArgs e)
         {
-            
+            Quiz quiz = new Quiz();
+            carregarPerguntas(quiz.Curso.ToString());      
+        }
 
-            
+        private void carregarPerguntas(string tema)
+        {
+            Pergunta.Text = tema;  
         }
     }
 }

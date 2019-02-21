@@ -10,8 +10,8 @@ namespace Quiz
 {
     class Quiz
     {   
-        private string nickName { get; set; }
-        private Curso Curso { get; set; }
+        public string nickName { get; set; }
+        public Curso Curso { get; set; }
 
         public Quiz() { }
 
