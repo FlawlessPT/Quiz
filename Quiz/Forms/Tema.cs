@@ -19,6 +19,12 @@ namespace Quiz
             inicio.Show();
         }
 
+        private void showPerguntas()
+        {
+            this.Hide();
+            Perguntas perguntas = new Perguntas();
+            perguntas.Show();
+        }
         public Tema()
         {
             InitializeComponent();
@@ -31,7 +37,49 @@ namespace Quiz
 
         private void Tema_Load(object sender, EventArgs e)
         {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
             Quiz quiz = new Quiz();
+            quiz.Curso = api.Curso.INFORMATICA;
+            showPerguntas();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Quiz quiz = new Quiz();
+            quiz.Curso = api.Curso.SECRETARIADO;
+            showPerguntas();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Quiz quiz = new Quiz();
+            quiz.Curso = api.Curso.TURISMO;
+            showPerguntas();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Quiz quiz = new Quiz();
+            quiz.Curso = api.Curso.ANALISES;
+            showPerguntas();
+        }
+
+        private void Eletricidade_Button_Click(object sender, EventArgs e)
+        {
+            Quiz quiz = new Quiz();
+            quiz.Curso = api.Curso.ELETRICIDADE;
+            showPerguntas();
+        }
+
+        private void FrioClimatizacao_Button_Click(object sender, EventArgs e)
+        {
+            Quiz quiz = new Quiz();
+            quiz.Curso = api.Curso.FRIO;
+            showPerguntas();
         }
     }
 }

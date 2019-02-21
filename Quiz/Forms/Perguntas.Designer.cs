@@ -38,11 +38,11 @@
             // Pergunta
             // 
             this.Pergunta.AutoSize = true;
-            this.Pergunta.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Pergunta.Font = new System.Drawing.Font("Tahoma", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Pergunta.ForeColor = System.Drawing.Color.White;
             this.Pergunta.Location = new System.Drawing.Point(223, 39);
             this.Pergunta.Name = "Pergunta";
-            this.Pergunta.Size = new System.Drawing.Size(107, 25);
+            this.Pergunta.Size = new System.Drawing.Size(108, 25);
             this.Pergunta.TabIndex = 16;
             this.Pergunta.Text = "Pergunta";
             // 

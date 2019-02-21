@@ -106,6 +106,7 @@
             this.FrioClimatizacao_Button.TabIndex = 11;
             this.FrioClimatizacao_Button.Text = "FRIO CLIMATIZAÇÃO";
             this.FrioClimatizacao_Button.UseVisualStyleBackColor = false;
+            this.FrioClimatizacao_Button.Click += new System.EventHandler(this.FrioClimatizacao_Button_Click);
             // 
             // Eletricidade_Button
             // 
@@ -135,11 +136,11 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Rocks__G", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Tahoma", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(136, 57);
+            this.label1.Location = new System.Drawing.Point(125, 57);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(274, 21);
+            this.label1.Size = new System.Drawing.Size(304, 25);
             this.label1.TabIndex = 13;
             this.label1.Text = "ESCOLHA O TEMA DO QUIZ:";
             // 
@@ -154,6 +155,7 @@
             this.button1.TabIndex = 6;
             this.button1.Text = "INFORMÁTICA";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -166,6 +168,7 @@
             this.button2.TabIndex = 7;
             this.button2.Text = "SECRETARIADO";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
@@ -178,6 +181,7 @@
             this.button3.TabIndex = 8;
             this.button3.Text = "TURISMO";
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button4
             // 
@@ -190,6 +194,7 @@
             this.button4.TabIndex = 9;
             this.button4.Text = "ANÁLISES LABORATORIAIS";
             this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // Tema
             // 

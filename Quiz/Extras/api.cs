@@ -28,7 +28,7 @@ namespace Quiz
 
         public enum Curso
         {
-            INFORMATICA,
+            SECRETARIADO, TURISMO, ANALISES, ELETRICIDADE, FRIO, INFORMATICA
         }
 
         public enum MessageType
@@ -134,3 +134,5 @@ namespace Quiz
         public static String nullReference = "Preencha todos os campos!";
     }
 }
+
+
