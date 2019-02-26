@@ -41,6 +41,7 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // Informatica_Button
@@ -104,7 +105,7 @@
             this.FrioClimatizacao_Button.Name = "FrioClimatizacao_Button";
             this.FrioClimatizacao_Button.Size = new System.Drawing.Size(225, 80);
             this.FrioClimatizacao_Button.TabIndex = 11;
-            this.FrioClimatizacao_Button.Text = "FRIO CLIMATIZAÇÃO";
+            this.FrioClimatizacao_Button.Text = "INSTALAÇÕES ELÉTRICAS";
             this.FrioClimatizacao_Button.UseVisualStyleBackColor = false;
             this.FrioClimatizacao_Button.Click += new System.EventHandler(this.FrioClimatizacao_Button_Click);
             // 
@@ -117,7 +118,7 @@
             this.Eletricidade_Button.Name = "Eletricidade_Button";
             this.Eletricidade_Button.Size = new System.Drawing.Size(225, 80);
             this.Eletricidade_Button.TabIndex = 10;
-            this.Eletricidade_Button.Text = "INSTALAÇÕES ELÉTRICAS";
+            this.Eletricidade_Button.Text = "ANÁLISES LABORATORIAIS";
             this.Eletricidade_Button.UseVisualStyleBackColor = false;
             // 
             // Voltar_Button
@@ -125,7 +126,7 @@
             this.Voltar_Button.BackColor = System.Drawing.Color.White;
             this.Voltar_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Voltar_Button.Font = new System.Drawing.Font("Impact", 20.25F);
-            this.Voltar_Button.Location = new System.Drawing.Point(164, 487);
+            this.Voltar_Button.Location = new System.Drawing.Point(163, 555);
             this.Voltar_Button.Name = "Voltar_Button";
             this.Voltar_Button.Size = new System.Drawing.Size(225, 80);
             this.Voltar_Button.TabIndex = 12;
@@ -138,7 +139,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Tahoma", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(125, 57);
+            this.label1.Location = new System.Drawing.Point(120, 57);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(304, 25);
             this.label1.TabIndex = 13;
@@ -179,7 +180,7 @@
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(225, 80);
             this.button3.TabIndex = 8;
-            this.button3.Text = "TURISMO";
+            this.button3.Text = "TURISMO 1";
             this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
@@ -192,16 +193,29 @@
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(225, 80);
             this.button4.TabIndex = 9;
-            this.button4.Text = "ANÁLISES LABORATORIAIS";
+            this.button4.Text = "TURISMO 2";
             this.button4.UseVisualStyleBackColor = false;
             this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // button5
+            // 
+            this.button5.BackColor = System.Drawing.Color.White;
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button5.Font = new System.Drawing.Font("Impact", 20.25F);
+            this.button5.Location = new System.Drawing.Point(163, 438);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(225, 80);
+            this.button5.TabIndex = 14;
+            this.button5.Text = "FRIO E CLIMATIZAÇÃO";
+            this.button5.UseVisualStyleBackColor = false;
             // 
             // Tema
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.Indigo;
-            this.ClientSize = new System.Drawing.Size(550, 635);
+            this.ClientSize = new System.Drawing.Size(550, 687);
+            this.Controls.Add(this.button5);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.Voltar_Button);
             this.Controls.Add(this.FrioClimatizacao_Button);
@@ -241,5 +255,6 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button button5;
     }
 }

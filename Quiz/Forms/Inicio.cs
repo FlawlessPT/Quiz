@@ -65,15 +65,15 @@ namespace Quiz
             quiz.nickName = nick;
             guardar(nick);
 
-            //api.sendMessage(Variables.player_nickname);
             showTema();
         }
 
         private void guardar(string nick)
         {
-            Stream ficheiro = File.Create("nickname.txt");
-            StreamWriter writer = new StreamWriter(ficheiro);
-            writer.WriteLine(nick);
+            StreamWriter writetext = new StreamWriter("nickname.txt");
+            writetext.WriteLine(nick);
+            writetext.Close();
+            //File.Delete("nickname.txt");
         }
 
         private void Sobre_Button_Click(object sender, EventArgs e)

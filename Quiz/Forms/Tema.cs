@@ -7,11 +7,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace Quiz
 {
     public partial class Tema : Form
     {
+        private string nome;
+
         private void showInicio()
         {
             this.Hide();
@@ -37,7 +40,9 @@ namespace Quiz
 
         private void Tema_Load(object sender, EventArgs e)
         {
-
+            StreamReader reader = new StreamReader("nickname.txt");
+            nome = reader.ReadLine();
+            api.sendMessage("Olá " + nome);
         }
 
         private void button1_Click(object sender, EventArgs e)

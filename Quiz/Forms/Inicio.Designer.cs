@@ -56,7 +56,7 @@
             this.label1.BackColor = System.Drawing.Color.Indigo;
             this.label1.Font = new System.Drawing.Font("Tahoma", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(71, 84);
+            this.label1.Location = new System.Drawing.Point(67, 85);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(405, 39);
             this.label1.TabIndex = 6;
@@ -68,7 +68,7 @@
             this.Nickname_Tb.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.Nickname_Tb.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Nickname_Tb.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.Nickname_Tb.Location = new System.Drawing.Point(149, 134);
+            this.Nickname_Tb.Location = new System.Drawing.Point(135, 135);
             this.Nickname_Tb.Name = "Nickname_Tb";
             this.Nickname_Tb.Size = new System.Drawing.Size(254, 35);
             this.Nickname_Tb.TabIndex = 7;
@@ -80,9 +80,9 @@
             this.Play_Button.Enabled = false;
             this.Play_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Play_Button.Font = new System.Drawing.Font("Impact", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Play_Button.Location = new System.Drawing.Point(149, 277);
+            this.Play_Button.Location = new System.Drawing.Point(135, 219);
             this.Play_Button.Name = "Play_Button";
-            this.Play_Button.Size = new System.Drawing.Size(225, 80);
+            this.Play_Button.Size = new System.Drawing.Size(254, 80);
             this.Play_Button.TabIndex = 5;
             this.Play_Button.Text = "JOGAR";
             this.Play_Button.UseVisualStyleBackColor = false;
@@ -106,7 +106,7 @@
             this.warning_Pb.BackColor = System.Drawing.Color.White;
             this.warning_Pb.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.warning_Pb.Image = ((System.Drawing.Image)(resources.GetObject("warning_Pb.Image")));
-            this.warning_Pb.Location = new System.Drawing.Point(371, 139);
+            this.warning_Pb.Location = new System.Drawing.Point(357, 140);
             this.warning_Pb.Name = "warning_Pb";
             this.warning_Pb.Size = new System.Drawing.Size(29, 24);
             this.warning_Pb.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
