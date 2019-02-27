@@ -63,17 +63,8 @@ namespace Quiz
         {
             string nick = Nickname_Tb.Text;
             quiz.nickName = nick;
-            guardar(nick);
-
+            quiz.SaveNickname();
             showTema();
-        }
-
-        private void guardar(string nick)
-        {
-            StreamWriter writetext = new StreamWriter("nickname.txt");
-            writetext.WriteLine(nick);
-            writetext.Close();
-            //File.Delete("nickname.txt");
         }
 
         private void Sobre_Button_Click(object sender, EventArgs e)

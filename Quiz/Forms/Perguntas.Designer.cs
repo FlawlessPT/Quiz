@@ -29,23 +29,24 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Perguntas));
-            this.Pergunta = new System.Windows.Forms.Label();
+            this.Pergunta_Label = new System.Windows.Forms.Label();
             this.Resposta2 = new System.Windows.Forms.Button();
             this.Resposta1 = new System.Windows.Forms.Button();
             this.Resposta4 = new System.Windows.Forms.Button();
             this.Resposta3 = new System.Windows.Forms.Button();
+            this.Tema_Label = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // Pergunta
+            // Pergunta_Label
             // 
-            this.Pergunta.AutoSize = true;
-            this.Pergunta.Font = new System.Drawing.Font("Tahoma", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Pergunta.ForeColor = System.Drawing.Color.White;
-            this.Pergunta.Location = new System.Drawing.Point(223, 39);
-            this.Pergunta.Name = "Pergunta";
-            this.Pergunta.Size = new System.Drawing.Size(108, 25);
-            this.Pergunta.TabIndex = 16;
-            this.Pergunta.Text = "Pergunta";
+            this.Pergunta_Label.AutoSize = true;
+            this.Pergunta_Label.Font = new System.Drawing.Font("Tahoma", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Pergunta_Label.ForeColor = System.Drawing.Color.White;
+            this.Pergunta_Label.Location = new System.Drawing.Point(223, 39);
+            this.Pergunta_Label.Name = "Pergunta_Label";
+            this.Pergunta_Label.Size = new System.Drawing.Size(108, 25);
+            this.Pergunta_Label.TabIndex = 16;
+            this.Pergunta_Label.Text = "Pergunta";
             // 
             // Resposta2
             // 
@@ -62,7 +63,6 @@
             // Resposta1
             // 
             this.Resposta1.BackColor = System.Drawing.Color.White;
-            this.Resposta1.Enabled = false;
             this.Resposta1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Resposta1.Font = new System.Drawing.Font("Impact", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Resposta1.Location = new System.Drawing.Point(76, 89);
@@ -87,7 +87,6 @@
             // Resposta3
             // 
             this.Resposta3.BackColor = System.Drawing.Color.White;
-            this.Resposta3.Enabled = false;
             this.Resposta3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Resposta3.Font = new System.Drawing.Font("Impact", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Resposta3.Location = new System.Drawing.Point(76, 319);
@@ -97,15 +96,27 @@
             this.Resposta3.Text = "Resposta 3";
             this.Resposta3.UseVisualStyleBackColor = false;
             // 
+            // Tema_Label
+            // 
+            this.Tema_Label.AutoSize = true;
+            this.Tema_Label.Font = new System.Drawing.Font("Tahoma", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Tema_Label.ForeColor = System.Drawing.Color.White;
+            this.Tema_Label.Location = new System.Drawing.Point(40, 39);
+            this.Tema_Label.Name = "Tema_Label";
+            this.Tema_Label.Size = new System.Drawing.Size(71, 25);
+            this.Tema_Label.TabIndex = 19;
+            this.Tema_Label.Text = "TEMA";
+            // 
             // Perguntas
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.Indigo;
             this.ClientSize = new System.Drawing.Size(550, 546);
+            this.Controls.Add(this.Tema_Label);
             this.Controls.Add(this.Resposta4);
             this.Controls.Add(this.Resposta3);
-            this.Controls.Add(this.Pergunta);
+            this.Controls.Add(this.Pergunta_Label);
             this.Controls.Add(this.Resposta2);
             this.Controls.Add(this.Resposta1);
             this.Cursor = System.Windows.Forms.Cursors.Default;
@@ -123,10 +134,11 @@
 
         #endregion
 
-        private System.Windows.Forms.Label Pergunta;
+        private System.Windows.Forms.Label Pergunta_Label;
         private System.Windows.Forms.Button Resposta2;
         private System.Windows.Forms.Button Resposta1;
         private System.Windows.Forms.Button Resposta4;
         private System.Windows.Forms.Button Resposta3;
+        private System.Windows.Forms.Label Tema_Label;
     }
 }

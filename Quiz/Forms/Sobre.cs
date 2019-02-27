@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Diagnostics;
 
 namespace Quiz
 {
@@ -27,6 +28,12 @@ namespace Quiz
         private void Voltar_Button_Click(object sender, EventArgs e)
         {
             showInicio();   
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            string link = "https://github.com/FlawlessPT/Quiz";
+            Process.Start(link);
         }
     }
 }

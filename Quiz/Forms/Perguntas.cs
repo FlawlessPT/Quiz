@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using static Quiz.Variables;
+using System.IO;
 
 namespace Quiz
 {
@@ -21,12 +22,8 @@ namespace Quiz
         private void Perguntas_Load(object sender, EventArgs e)
         {
             Quiz quiz = new Quiz();
-            carregarPerguntas(quiz.Curso.ToString());      
-        }
-
-        private void carregarPerguntas(string tema)
-        {
-            Pergunta.Text = tema;  
+            //carregarPerguntas();
+            Tema_Label.Text = quiz.GetSelectedTema();    
         }
     }
 }

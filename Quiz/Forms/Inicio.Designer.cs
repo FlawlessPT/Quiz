@@ -43,7 +43,7 @@
             this.Leave_Button.BackColor = System.Drawing.Color.White;
             this.Leave_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Leave_Button.Font = new System.Drawing.Font("Impact", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Leave_Button.Location = new System.Drawing.Point(310, 393);
+            this.Leave_Button.Location = new System.Drawing.Point(310, 384);
             this.Leave_Button.Name = "Leave_Button";
             this.Leave_Button.Size = new System.Drawing.Size(187, 56);
             this.Leave_Button.TabIndex = 8;
@@ -93,7 +93,7 @@
             this.sobre_Button.BackColor = System.Drawing.Color.White;
             this.sobre_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.sobre_Button.Font = new System.Drawing.Font("Impact", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.sobre_Button.Location = new System.Drawing.Point(22, 393);
+            this.sobre_Button.Location = new System.Drawing.Point(22, 384);
             this.sobre_Button.Name = "sobre_Button";
             this.sobre_Button.Size = new System.Drawing.Size(187, 56);
             this.sobre_Button.TabIndex = 9;
