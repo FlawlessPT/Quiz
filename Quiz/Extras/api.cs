@@ -28,7 +28,7 @@ namespace Quiz
 
         public enum Curso
         {
-            SECRETARIADO, TURISMO1, TURISMO2, ANALISES, ELETRICIDADE, FRIO, INFORMATICA
+            TURISMO, ANALISES, ELETRICIDADE, INFORMATICA
         }
 
         public enum MessageType

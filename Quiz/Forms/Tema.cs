@@ -40,12 +40,18 @@ namespace Quiz
 
         private void Tema_Load(object sender, EventArgs e)
         {
-            StreamReader reader = new StreamReader("nickname.txt");
-            nome = reader.ReadLine();
-            api.sendMessage("Olá " + nome);
+
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void Eletricidade_Button_Click(object sender, EventArgs e)
+        {
+            Quiz quiz = new Quiz();
+            quiz.Curso = api.Curso.ELETRICIDADE;
+            quiz.SaveTema();
+            showPerguntas();
+        }
+
+        private void Informatica_Button_Click(object sender, EventArgs e)
         {
             Quiz quiz = new Quiz();
             quiz.Curso = api.Curso.INFORMATICA;
@@ -53,15 +59,7 @@ namespace Quiz
             showPerguntas();
         }
 
-        private void button2_Click(object sender, EventArgs e)
-        {
-            Quiz quiz = new Quiz();
-            quiz.Curso = api.Curso.SECRETARIADO;
-            quiz.SaveTema();
-            showPerguntas();
-        }
-
-        private void button3_Click(object sender, EventArgs e)
+        private void Turismo_Button_Click(object sender, EventArgs e)
         {
             Quiz quiz = new Quiz();
             quiz.Curso = api.Curso.TURISMO;
@@ -69,40 +67,10 @@ namespace Quiz
             showPerguntas();
         }
 
-        private void button4_Click(object sender, EventArgs e)
-        {
-            Quiz quiz = new Quiz();
-            quiz.Curso = api.Curso.TURISMO;
-            showPerguntas();
-        }
-
-        private void Eletricidade_Button_Click(object sender, EventArgs e)
-        {
-            Quiz quiz = new Quiz();
-            quiz.Curso = api.Curso.ELETRICIDADE;
-            showPerguntas();
-        }
-
-        private void FrioClimatizacao_Button_Click(object sender, EventArgs e)
-        {
-            Quiz quiz = new Quiz();
-            quiz.Curso = api.Curso.ELETRICIDADE;
-            quiz.SaveTema();
-            showPerguntas();
-        }
-
-        private void Eletricidade_Button_Click_1(object sender, EventArgs e)
+        private void Analises_Button_Click(object sender, EventArgs e)
         {
             Quiz quiz = new Quiz();
             quiz.Curso = api.Curso.ANALISES;
-            quiz.SaveTema();
-            showPerguntas();
-        }
-
-        private void button5_Click(object sender, EventArgs e)
-        {
-            Quiz quiz = new Quiz();
-            quiz.Curso = api.Curso.FRIO;
             quiz.SaveTema();
             showPerguntas();
         }

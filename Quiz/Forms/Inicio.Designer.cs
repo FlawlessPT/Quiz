@@ -73,6 +73,7 @@
             this.Nickname_Tb.Size = new System.Drawing.Size(254, 35);
             this.Nickname_Tb.TabIndex = 7;
             this.Nickname_Tb.TextChanged += new System.EventHandler(this.Nickname_Tb_TextChanged);
+            this.Nickname_Tb.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Nickname_Tb_KeyDown);
             // 
             // Play_Button
             // 
@@ -106,9 +107,9 @@
             this.warning_Pb.BackColor = System.Drawing.Color.White;
             this.warning_Pb.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.warning_Pb.Image = ((System.Drawing.Image)(resources.GetObject("warning_Pb.Image")));
-            this.warning_Pb.Location = new System.Drawing.Point(357, 140);
+            this.warning_Pb.Location = new System.Drawing.Point(357, 138);
             this.warning_Pb.Name = "warning_Pb";
-            this.warning_Pb.Size = new System.Drawing.Size(29, 24);
+            this.warning_Pb.Size = new System.Drawing.Size(29, 29);
             this.warning_Pb.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.warning_Pb.TabIndex = 10;
             this.warning_Pb.TabStop = false;
@@ -133,6 +134,7 @@
             this.Name = "Inicio";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "QuiZ";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Inicio_FormClosing);
             this.Load += new System.EventHandler(this.Inicio_Load);
             ((System.ComponentModel.ISupportInitialize)(this.warning_Pb)).EndInit();
             this.ResumeLayout(false);
