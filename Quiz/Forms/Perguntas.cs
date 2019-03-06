@@ -14,7 +14,8 @@ namespace Quiz
 {
     public partial class Perguntas : Form
     {
-        int contar = 10;
+        int contar2 = 0;
+        int contar = 20;
         int contarPergunta = 0;
         string[] respostas = new string[4];
 
@@ -65,7 +66,7 @@ namespace Quiz
             Quiz.CarregarRespostas(Resposta1, Resposta2, Resposta3, Resposta4, respostas);
             contar--;
             timer1.Stop();
-            contar = 10;
+            contar = 20;
             timer1.Start();
             contarPergunta++;
             quiz.SaveNextRespostas(quiz.GetIdPergunta() + contarPergunta, respostas);
@@ -89,7 +90,8 @@ namespace Quiz
                     quiz.Seguinte(true, timer1);
                     Tempo_Label.Text = "-";
                     timer1.Stop();
-                    ShowScore();
+                    timer2.Start();
+                    //ShowScore();
                     return;
                 }
 
@@ -100,7 +102,7 @@ namespace Quiz
                 timer1.Stop();
                 contarPergunta++;
                 Pergunta_Label.Text = quiz.CarregarPergunta(contarPergunta);
-                contar = 10;
+                contar = 20;
                 quiz.SaveNextRespostas(quiz.GetIdPergunta() + contarPergunta, respostas);
                 Quiz.CarregarRespostas(Resposta1, Resposta2, Resposta3, Resposta4, respostas);
                 quiz.Seguinte(false, timer1);
@@ -136,10 +138,10 @@ namespace Quiz
                     Resposta4.Enabled = false;
                     Resposta1.BackColor = Color.Green;
                     quiz.Seguinte(true, timer1);
-                    //api.sendMessage("Jogo terminado " + quiz.GetAcertadas() + " " + quiz.GetFalhadas());
                     Tempo_Label.Text = "-";
                     timer1.Stop();
-                    ShowScore();
+                    timer2.Start();
+                    //ShowScore();
                 }
                 else
                 {
@@ -160,10 +162,10 @@ namespace Quiz
                     Resposta4.Enabled = false;
                     Resposta1.BackColor = Color.Red;
                     quiz.Seguinte(false, timer1);
-                    //api.sendMessage("Jogo terminado " + quiz.GetAcertadas() + " " + quiz.GetFalhadas());
                     Tempo_Label.Text = "-";
                     timer1.Stop();
-                    ShowScore();
+                    timer2.Start();
+                    //ShowScore();
                 }
                 else
                 {
@@ -196,10 +198,10 @@ namespace Quiz
                     Resposta4.Enabled = false;
                     Resposta2.BackColor = Color.Green;
                     quiz.Seguinte(true, timer1);
-                    //api.sendMessage("Jogo terminado " + quiz.GetAcertadas() + " " + quiz.GetFalhadas());
                     Tempo_Label.Text = "-";
                     timer1.Stop();
-                    ShowScore();
+                    timer2.Start();
+                    //ShowScore();
                 }
                 else
                 {
@@ -219,10 +221,10 @@ namespace Quiz
                     Resposta4.Enabled = false;
                     Resposta2.BackColor = Color.Red;
                     quiz.Seguinte(false, timer1);
-                    //api.sendMessage("Jogo terminado " + quiz.GetAcertadas() + " " + quiz.GetFalhadas());
                     Tempo_Label.Text = "-";
                     timer1.Stop();
-                    ShowScore();
+                    timer2.Start();
+                    //ShowScore();
                 }
                 else
                 {
@@ -255,10 +257,10 @@ namespace Quiz
                     Resposta4.Enabled = false;
                     Resposta3.BackColor = Color.Green;
                     quiz.Seguinte(true, timer1);
-                    //api.sendMessage("Jogo terminado " + quiz.GetAcertadas() + " " + quiz.GetFalhadas());
                     Tempo_Label.Text = "-";
                     timer1.Stop();
-                    ShowScore();
+                    timer2.Start();
+                    //ShowScore();
                 }
                 else
                 {
@@ -279,10 +281,10 @@ namespace Quiz
                     Resposta4.Enabled = false;
                     Resposta3.BackColor = Color.Red;
                     quiz.Seguinte(false, timer1);
-                    //api.sendMessage("Jogo terminado " + quiz.GetAcertadas() + " " + quiz.GetFalhadas());
                     Tempo_Label.Text = "-";
                     timer1.Stop();
-                    ShowScore();
+                    timer2.Start();
+                    //ShowScore();
                 }
                 else
                 {
@@ -314,10 +316,10 @@ namespace Quiz
                     Resposta3.Enabled = false;
                     Resposta4.Enabled = false;
                     Resposta4.BackColor = Color.Green;
-                    //api.sendMessage("Jogo terminado " + quiz.GetAcertadas() + " " + quiz.GetFalhadas());
                     Tempo_Label.Text = "-";
                     timer1.Stop();
-                    ShowScore();
+                    timer2.Start();
+                    //ShowScore();
                 }
                 else
                 {
@@ -336,10 +338,10 @@ namespace Quiz
                     Resposta3.Enabled = false;
                     Resposta4.Enabled = false;
                     Resposta4.BackColor = Color.Red;
-                    //api.sendMessage("Jogo terminado " + quiz.GetAcertadas() + " " + quiz.GetFalhadas());
                     Tempo_Label.Text = "-";
                     timer1.Stop();
-                    ShowScore();
+                    timer2.Start();
+                    //ShowScore();
                 }
                 else
                 {
@@ -367,7 +369,15 @@ namespace Quiz
 
         private void timer2_Tick(object sender, EventArgs e)
         {
-
+            if (contar2 == 1)
+            {
+                timer2.Stop();
+                ShowScore();
+            }
+            else
+            {
+                contar2++;
+            }
         }
     }
 }

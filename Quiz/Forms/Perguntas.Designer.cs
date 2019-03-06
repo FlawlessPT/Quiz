@@ -58,10 +58,10 @@
             // 
             this.Resposta2.BackColor = System.Drawing.Color.White;
             this.Resposta2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Resposta2.Font = new System.Drawing.Font("Impact", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Resposta2.Font = new System.Drawing.Font("Impact", 17F);
             this.Resposta2.Location = new System.Drawing.Point(76, 256);
             this.Resposta2.Name = "Resposta2";
-            this.Resposta2.Size = new System.Drawing.Size(400, 80);
+            this.Resposta2.Size = new System.Drawing.Size(400, 97);
             this.Resposta2.TabIndex = 14;
             this.Resposta2.Text = "Resposta 2";
             this.Resposta2.UseVisualStyleBackColor = false;
@@ -71,10 +71,10 @@
             // 
             this.Resposta1.BackColor = System.Drawing.Color.White;
             this.Resposta1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Resposta1.Font = new System.Drawing.Font("Impact", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Resposta1.Font = new System.Drawing.Font("Impact", 17F);
             this.Resposta1.Location = new System.Drawing.Point(76, 142);
             this.Resposta1.Name = "Resposta1";
-            this.Resposta1.Size = new System.Drawing.Size(400, 80);
+            this.Resposta1.Size = new System.Drawing.Size(400, 97);
             this.Resposta1.TabIndex = 15;
             this.Resposta1.Text = "Resposta 1";
             this.Resposta1.UseVisualStyleBackColor = false;
@@ -85,10 +85,10 @@
             // 
             this.Resposta4.BackColor = System.Drawing.Color.White;
             this.Resposta4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Resposta4.Font = new System.Drawing.Font("Impact", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Resposta4.Font = new System.Drawing.Font("Impact", 17F);
             this.Resposta4.Location = new System.Drawing.Point(76, 486);
             this.Resposta4.Name = "Resposta4";
-            this.Resposta4.Size = new System.Drawing.Size(400, 80);
+            this.Resposta4.Size = new System.Drawing.Size(400, 97);
             this.Resposta4.TabIndex = 17;
             this.Resposta4.Text = "Resposta 4";
             this.Resposta4.UseVisualStyleBackColor = false;
@@ -98,10 +98,10 @@
             // 
             this.Resposta3.BackColor = System.Drawing.Color.White;
             this.Resposta3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Resposta3.Font = new System.Drawing.Font("Impact", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Resposta3.Font = new System.Drawing.Font("Impact", 17F);
             this.Resposta3.Location = new System.Drawing.Point(76, 372);
             this.Resposta3.Name = "Resposta3";
-            this.Resposta3.Size = new System.Drawing.Size(400, 80);
+            this.Resposta3.Size = new System.Drawing.Size(400, 97);
             this.Resposta3.TabIndex = 18;
             this.Resposta3.Text = "Resposta 3";
             this.Resposta3.UseVisualStyleBackColor = false;
