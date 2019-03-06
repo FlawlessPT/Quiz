@@ -79,19 +79,17 @@ namespace Quiz
 
             if (contar == 0)
             {
-                if (contarPergunta == 3)
+                if (contarPergunta == 4)
                 {
-                    //api.sendMessage("teste");
+                    contarPergunta = 0;
                     Resposta1.Enabled = false;
                     Resposta2.Enabled = false;
                     Resposta3.Enabled = false;
                     Resposta4.Enabled = false;
-                    Resposta1.BackColor = Color.Green;
-                    quiz.Seguinte(true, timer1);
+                    quiz.Seguinte(false, timer1);
                     Tempo_Label.Text = "-";
                     timer1.Stop();
                     timer2.Start();
-                    //ShowScore();
                     return;
                 }
 
