@@ -109,7 +109,7 @@
             this.Turismo_Button.Name = "Turismo_Button";
             this.Turismo_Button.Size = new System.Drawing.Size(225, 80);
             this.Turismo_Button.TabIndex = 8;
-            this.Turismo_Button.Text = "Turismo de Animação";
+            this.Turismo_Button.Text = "TURISMO DE ANIMAÇÃO";
             this.Turismo_Button.UseVisualStyleBackColor = false;
             this.Turismo_Button.Click += new System.EventHandler(this.Turismo_Button_Click);
             // 

@@ -11,11 +11,11 @@ using System.Data.OleDb;
 namespace Quiz
 {
     class Quiz
-    {   
+    {
         public string nickName { get; set; }
         public Curso Curso { get; set; }
 
-        static string connectionString = @"Provider=Microsoft.Jet.OLEDB.4.0;Data Source=F:\Trabalhos\12º\Quiz\Quiz\Quiz\bin\Debug\Quiz.mdb";
+        static string connectionString = @"Provider=Microsoft.Jet.OLEDB.4.0;Data Source=" + Application.StartupPath + "/Quiz.mdb";
         private OleDbConnection connection = new OleDbConnection(connectionString);
 
 
@@ -107,7 +107,7 @@ namespace Quiz
             StreamReader reader = new StreamReader(file);
             linha = reader.ReadLine();
             int separador = linha.IndexOf("|");
-            
+
             string tema = linha.Substring(separador + 1);
 
             reader.Close();
@@ -154,7 +154,6 @@ namespace Quiz
             Stream file = File.Open("perguntas.txt", FileMode.Open);
             StreamReader reader = new StreamReader(file);
             linha = reader.ReadLine();
-
             int separador = linha.IndexOf("|");
             string pergunta = linha.Substring(separador + 1);
 
@@ -168,13 +167,17 @@ namespace Quiz
         {
             int id = 0;
 
+            
             connection.Open();
-            string query = "SELECT IdResposta FROM Respostas WHERE Resposta=" + resposta;
+            string query = String.Format("SELECT IdResposta FROM Respostas WHERE Resposta='{0}'", resposta);
             OleDbCommand command = new OleDbCommand(query, connection);
             OleDbDataReader dr = command.ExecuteReader();
-            id = Convert.ToInt32(dr[0]);
-            connection.Close();
+            if (dr.Read())
+            {
+                id = Convert.ToInt32(dr[0]);
+            }
 
+            connection.Close();
             return id;
         }
 
@@ -199,6 +202,104 @@ namespace Quiz
 
             connection.Close();
         }
+
+        public void SaveNextRespostas(int idPergunta, string[] respostas)
+        {
+            Quiz quiz = new Quiz();
+            connection.Open();
+            string query = "SELECT Resposta FROM Respostas WHERE IdPergunta=" + idPergunta;
+            OleDbCommand command = new OleDbCommand(query, connection);
+            OleDbDataReader dr = command.ExecuteReader();
+
+            int i = 0;
+
+            while (dr.Read())
+            {
+                respostas[i] = dr[0].ToString();
+                i++;
+            }
+
+            connection.Close();
+        }
+
+        public static void CleanFiles()
+        {
+            File.WriteAllText("nickname.txt", String.Empty);
+            File.WriteAllText("tema.txt", String.Empty);
+            File.WriteAllText("perguntas.txt", String.Empty);
+        }
+
+        public void CriarFicheiroScore()
+        {
+            Stream file = File.Create("score.txt");
+            StreamWriter writer = new StreamWriter(file);
+
+            writer.WriteLine("0 | 0");
+            writer.Close();
+            file.Close();
+        }
+
+        private void EscreverFicheiro(string valor1, string valor2)
+        {
+            Stream file = File.Open("score.txt", FileMode.Open);
+            StreamWriter writer = new StreamWriter(file);
+
+            writer.Write(valor1 + " | " + valor2);
+
+            writer.Close();
+            file.Close();
+        }
+
+        public int GetAcertadas()
+        {
+            Stream file = File.Open("score.txt", FileMode.Open);
+            StreamReader reader = new StreamReader(file);
+            string linha = reader.ReadLine();
+            int separador = linha.IndexOf("|");
+            int acertadas = Convert.ToInt32(linha.Substring(0, separador));
+
+            reader.Close();
+            file.Close();
+            return acertadas;
+        }
+
+        public int GetFalhadas()
+        {
+            Stream file = File.Open("score.txt", FileMode.Open);
+            StreamReader reader = new StreamReader(file);
+            string linha = reader.ReadLine();
+            int separador = linha.IndexOf("|");
+            int falhadas = Convert.ToInt32(linha.Substring(separador + 1));
+
+            reader.Close();
+            file.Close();
+            return falhadas;
+        }
+
+        public void Seguinte(bool acertou, Timer timer1)
+        {
+            int contarCertas = GetAcertadas();
+            int contarFalhadas = GetFalhadas();
+            timer1.Stop();
+
+            if (acertou == true)
+            {
+                contarCertas++;
+            }
+            else
+            {
+                contarFalhadas++;
+            }
+
+            EscreverFicheiro(contarCertas.ToString(), contarFalhadas.ToString());
+        }
+
+        public static void CarregarRespostas(Button Resposta1, Button Resposta2, Button Resposta3, Button Resposta4, string[] respostas)
+        {
+            Resposta1.Text = respostas[0];
+            Resposta2.Text = respostas[1];
+            Resposta3.Text = respostas[2];
+            Resposta4.Text = respostas[3];
+        }
     }
 }
-    

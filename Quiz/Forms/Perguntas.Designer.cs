@@ -40,6 +40,7 @@
             this.Tempo_Label = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.timer2 = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -77,6 +78,7 @@
             this.Resposta1.TabIndex = 15;
             this.Resposta1.Text = "Resposta 1";
             this.Resposta1.UseVisualStyleBackColor = false;
+            this.Resposta1.TextChanged += new System.EventHandler(this.Resposta1_TextChanged);
             this.Resposta1.Click += new System.EventHandler(this.Resposta1_Click);
             // 
             // Resposta4
@@ -156,6 +158,11 @@
             this.label1.Text = "Tema:";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
+            // timer2
+            // 
+            this.timer2.Interval = 1000;
+            this.timer2.Tick += new System.EventHandler(this.timer2_Tick);
+            // 
             // Perguntas
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
@@ -197,5 +204,6 @@
         private System.Windows.Forms.Label Tempo_Label;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Timer timer2;
     }
 }

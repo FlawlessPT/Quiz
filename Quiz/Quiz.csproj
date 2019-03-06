@@ -47,7 +47,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Extras\api.cs" />
-    <Compile Include="Extras\Variables.cs" />
     <Compile Include="Forms\Inicio.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -60,6 +59,12 @@
     </Compile>
     <Compile Include="Forms\Perguntas.Designer.cs">
       <DependentUpon>Perguntas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Score.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Score.Designer.cs">
+      <DependentUpon>Score.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -86,6 +91,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Perguntas.resx">
       <DependentUpon>Perguntas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Score.resx">
+      <DependentUpon>Score.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>

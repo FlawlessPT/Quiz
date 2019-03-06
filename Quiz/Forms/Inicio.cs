@@ -36,10 +36,7 @@ namespace Quiz
 
         private void Inicio_Load(object sender, EventArgs e)
         {
-            Quiz quiz = new Quiz();
-            Nickname_Tb.Text = quiz.GetNickName();
-            //Nickname_Tb.Text = quiz.nickName;
-            //api.sendMessage(quiz.nickName);
+
         }
 
         private void Nickname_Tb_TextChanged(object sender, EventArgs e)
@@ -87,9 +84,7 @@ namespace Quiz
 
         private void Inicio_FormClosing(object sender, FormClosingEventArgs e)
         {
-            File.WriteAllText("nickname.txt", String.Empty);
-            File.WriteAllText("tema.txt", String.Empty);
-            File.WriteAllText("perguntas.txt", String.Empty);
+            Quiz.CleanFiles();
         }
     }
 }
