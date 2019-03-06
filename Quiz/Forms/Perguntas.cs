@@ -316,6 +316,7 @@ namespace Quiz
                     Resposta3.Enabled = false;
                     Resposta4.Enabled = false;
                     Resposta4.BackColor = Color.Green;
+                    quiz.Seguinte(true, timer1);
                     Tempo_Label.Text = "-";
                     timer1.Stop();
                     timer2.Start();
@@ -338,6 +339,7 @@ namespace Quiz
                     Resposta3.Enabled = false;
                     Resposta4.Enabled = false;
                     Resposta4.BackColor = Color.Red;
+                    quiz.Seguinte(false, timer1);
                     Tempo_Label.Text = "-";
                     timer1.Stop();
                     timer2.Start();

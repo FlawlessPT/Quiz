@@ -36,7 +36,7 @@ namespace Quiz
 
         private void Inicio_Load(object sender, EventArgs e)
         {
-
+            Quiz.CleanFiles();
         }
 
         private void Nickname_Tb_TextChanged(object sender, EventArgs e)
