@@ -29,6 +29,7 @@ namespace Quiz
 
         private void Perguntas_Load(object sender, EventArgs e)
         {
+            contarPergunta = 0;
             Quiz quiz = new Quiz();
             quiz.SavePerguntas();
             Tema_Label.Text = quiz.GetTema();
@@ -79,7 +80,7 @@ namespace Quiz
 
             if (contar == 0)
             {
-                if (contarPergunta == 4)
+                if (contarPergunta == 3)
                 {
                     contarPergunta = 0;
                     Resposta1.Enabled = false;
@@ -128,8 +129,9 @@ namespace Quiz
 
             if (isCorreta)
             {
-                if (contarPergunta == 2)
+                if (contarPergunta == 3)
                 {
+                    contarPergunta = 0;
                     Resposta1.Enabled = false;
                     Resposta2.Enabled = false;
                     Resposta3.Enabled = false;
@@ -154,6 +156,7 @@ namespace Quiz
 
                 if (contarPergunta == 3)
                 {
+                    contarPergunta = 0;
                     Resposta1.Enabled = false;
                     Resposta2.Enabled = false;
                     Resposta3.Enabled = false;
@@ -190,6 +193,7 @@ namespace Quiz
             {
                 if (contarPergunta == 3)
                 {
+                    contarPergunta = 0;
                     Resposta1.Enabled = false;
                     Resposta2.Enabled = false;
                     Resposta3.Enabled = false;
@@ -213,6 +217,7 @@ namespace Quiz
             {
                 if (contarPergunta == 3)
                 {
+                    contarPergunta = 0;
                     Resposta1.Enabled = false;
                     Resposta2.Enabled = false;
                     Resposta3.Enabled = false;
@@ -249,6 +254,7 @@ namespace Quiz
             {
                 if (contarPergunta == 3)
                 {
+                    contarPergunta = 0;
                     Resposta1.Enabled = false;
                     Resposta2.Enabled = false;
                     Resposta3.Enabled = false;
@@ -273,6 +279,7 @@ namespace Quiz
 
                 if (contarPergunta == 3)
                 {
+                    contarPergunta = 0;
                     Resposta1.Enabled = false;
                     Resposta2.Enabled = false;
                     Resposta3.Enabled = false;
@@ -309,6 +316,7 @@ namespace Quiz
             {
                 if (contarPergunta == 3)
                 {
+                    contarPergunta = 0;
                     Resposta1.Enabled = false;
                     Resposta2.Enabled = false;
                     Resposta3.Enabled = false;
@@ -332,6 +340,7 @@ namespace Quiz
             {
                 if (contarPergunta == 3)
                 {
+                    contarPergunta = 0;
                     Resposta1.Enabled = false;
                     Resposta2.Enabled = false;
                     Resposta3.Enabled = false;

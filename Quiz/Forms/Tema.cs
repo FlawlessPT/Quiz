@@ -38,11 +38,6 @@ namespace Quiz
             showInicio();
         }
 
-        private void Tema_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void Eletricidade_Button_Click(object sender, EventArgs e)
         {
             Quiz quiz = new Quiz();

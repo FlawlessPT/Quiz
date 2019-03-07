@@ -118,7 +118,7 @@
             this.label7.BackColor = System.Drawing.Color.Indigo;
             this.label7.Font = new System.Drawing.Font("Impact", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.Gold;
-            this.label7.Location = new System.Drawing.Point(72, 79);
+            this.label7.Location = new System.Drawing.Point(72, 78);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(315, 43);
             this.label7.TabIndex = 6;

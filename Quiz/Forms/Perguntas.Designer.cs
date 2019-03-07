@@ -59,7 +59,7 @@
             this.Resposta2.BackColor = System.Drawing.Color.White;
             this.Resposta2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Resposta2.Font = new System.Drawing.Font("Impact", 17F);
-            this.Resposta2.Location = new System.Drawing.Point(76, 256);
+            this.Resposta2.Location = new System.Drawing.Point(87, 256);
             this.Resposta2.Name = "Resposta2";
             this.Resposta2.Size = new System.Drawing.Size(400, 97);
             this.Resposta2.TabIndex = 14;
@@ -72,7 +72,7 @@
             this.Resposta1.BackColor = System.Drawing.Color.White;
             this.Resposta1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Resposta1.Font = new System.Drawing.Font("Impact", 17F);
-            this.Resposta1.Location = new System.Drawing.Point(76, 142);
+            this.Resposta1.Location = new System.Drawing.Point(87, 142);
             this.Resposta1.Name = "Resposta1";
             this.Resposta1.Size = new System.Drawing.Size(400, 97);
             this.Resposta1.TabIndex = 15;
@@ -86,7 +86,7 @@
             this.Resposta4.BackColor = System.Drawing.Color.White;
             this.Resposta4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Resposta4.Font = new System.Drawing.Font("Impact", 17F);
-            this.Resposta4.Location = new System.Drawing.Point(76, 486);
+            this.Resposta4.Location = new System.Drawing.Point(87, 486);
             this.Resposta4.Name = "Resposta4";
             this.Resposta4.Size = new System.Drawing.Size(400, 97);
             this.Resposta4.TabIndex = 17;
@@ -99,7 +99,7 @@
             this.Resposta3.BackColor = System.Drawing.Color.White;
             this.Resposta3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Resposta3.Font = new System.Drawing.Font("Impact", 17F);
-            this.Resposta3.Location = new System.Drawing.Point(76, 372);
+            this.Resposta3.Location = new System.Drawing.Point(87, 372);
             this.Resposta3.Name = "Resposta3";
             this.Resposta3.Size = new System.Drawing.Size(400, 97);
             this.Resposta3.TabIndex = 18;
@@ -132,7 +132,7 @@
             this.Tempo_Label.ForeColor = System.Drawing.Color.White;
             this.Tempo_Label.Location = new System.Drawing.Point(502, 67);
             this.Tempo_Label.Name = "Tempo_Label";
-            this.Tempo_Label.Size = new System.Drawing.Size(53, 30);
+            this.Tempo_Label.Size = new System.Drawing.Size(47, 30);
             this.Tempo_Label.TabIndex = 20;
             this.Tempo_Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -168,7 +168,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.Indigo;
-            this.ClientSize = new System.Drawing.Size(582, 593);
+            this.ClientSize = new System.Drawing.Size(576, 627);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.Tempo_Label);
             this.Controls.Add(this.Tema_Label);

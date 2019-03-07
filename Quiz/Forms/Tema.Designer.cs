@@ -132,7 +132,6 @@
             this.Name = "Tema";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "QuiZ";
-            this.Load += new System.EventHandler(this.Tema_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
