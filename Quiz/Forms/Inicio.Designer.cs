@@ -35,6 +35,7 @@
             this.Play_Button = new System.Windows.Forms.Button();
             this.sobre_Button = new System.Windows.Forms.Button();
             this.warning_Pb = new System.Windows.Forms.PictureBox();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.warning_Pb)).BeginInit();
             this.SuspendLayout();
             // 
@@ -54,11 +55,11 @@
             // label1
             // 
             this.label1.BackColor = System.Drawing.Color.Indigo;
-            this.label1.Font = new System.Drawing.Font("Tahoma", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Arial Narrow", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(67, 85);
+            this.label1.Location = new System.Drawing.Point(47, 83);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(405, 39);
+            this.label1.Size = new System.Drawing.Size(437, 39);
             this.label1.TabIndex = 6;
             this.label1.Text = "Indique-nos um nickname: ";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -66,7 +67,7 @@
             // Nickname_Tb
             // 
             this.Nickname_Tb.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Nickname_Tb.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Nickname_Tb.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Nickname_Tb.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.Nickname_Tb.Location = new System.Drawing.Point(135, 135);
             this.Nickname_Tb.Name = "Nickname_Tb";
@@ -115,12 +116,25 @@
             this.warning_Pb.TabStop = false;
             this.warning_Pb.Visible = false;
             // 
+            // label2
+            // 
+            this.label2.BackColor = System.Drawing.Color.Indigo;
+            this.label2.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.Yellow;
+            this.label2.Location = new System.Drawing.Point(61, 178);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(405, 39);
+            this.label2.TabIndex = 11;
+            this.label2.Text = "O nome não pode conter espaços!";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
             // Inicio
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.Indigo;
             this.ClientSize = new System.Drawing.Size(519, 461);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.warning_Pb);
             this.Controls.Add(this.sobre_Button);
             this.Controls.Add(this.Leave_Button);
@@ -150,6 +164,7 @@
         private System.Windows.Forms.Button Play_Button;
         private System.Windows.Forms.Button sobre_Button;
         private System.Windows.Forms.PictureBox warning_Pb;
+        private System.Windows.Forms.Label label2;
     }
 }
 

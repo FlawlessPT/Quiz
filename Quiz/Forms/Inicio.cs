@@ -36,6 +36,7 @@ namespace Quiz
 
         private void Inicio_Load(object sender, EventArgs e)
         {
+            label2.Visible = false;
             Quiz.CleanFiles();
         }
 
@@ -43,13 +44,24 @@ namespace Quiz
         {
             if (api.VerificarNickName(Nickname_Tb))
             {
+                label2.Visible = false;
                 Play_Button.Enabled = true;
                 warning_Pb.Visible = false;
             }
             else
             {
-                Play_Button.Enabled = false;
-                warning_Pb.Visible = true;
+                if (Nickname_Tb.Text == "")
+                {
+                    label2.Visible = false;
+                    Play_Button.Enabled = false;
+                    warning_Pb.Visible = true;
+                }
+                else
+                {
+                    label2.Visible = true;
+                    Play_Button.Enabled = false;
+                    warning_Pb.Visible = true;
+                }
             }
         }
 

@@ -130,7 +130,7 @@
             this.Tempo_Label.BackColor = System.Drawing.Color.Transparent;
             this.Tempo_Label.Font = new System.Drawing.Font("Tahoma", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Tempo_Label.ForeColor = System.Drawing.Color.White;
-            this.Tempo_Label.Location = new System.Drawing.Point(502, 67);
+            this.Tempo_Label.Location = new System.Drawing.Point(505, 67);
             this.Tempo_Label.Name = "Tempo_Label";
             this.Tempo_Label.Size = new System.Drawing.Size(47, 30);
             this.Tempo_Label.TabIndex = 20;

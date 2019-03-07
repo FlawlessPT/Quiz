@@ -16,7 +16,14 @@ namespace Quiz
 
             if (textBox.TextLength > 0)
             {
-                estado = true;
+                if (!textBox.Text.Contains(" "))
+                {
+                    estado = true;
+                }
+                else
+                {
+                    estado = false;
+                }
             }
             else
             {
